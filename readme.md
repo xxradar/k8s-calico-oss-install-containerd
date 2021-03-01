@@ -3,11 +3,11 @@
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 sudo apt update -y
-sudo apt install \
+sudo apt install -y \
     watch \
     ipset \
     kubeadm \
-    tcpdump -y
+    tcpdump
 
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
