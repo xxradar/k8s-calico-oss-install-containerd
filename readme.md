@@ -11,7 +11,7 @@ sudo apt install -y \
     ipset \
     tcpdump
 
-sudo apt install-y \
+sudo apt install -y \
           kubeadm=${K8SVERSION} \
           kubelet=${K8SVERSION} \
           kubectl=${K8SVERSION} 
