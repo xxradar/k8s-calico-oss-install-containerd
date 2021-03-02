@@ -1,14 +1,21 @@
 ```
 #!/usr/bin/env bash
+K8SVERSION=1.18.3-00
+
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 sudo apt update -y
+
 sudo apt install -y \
     watch \
     ipset \
-    kubeadm \
     tcpdump
 
+sudo apt install-y \
+          kubeadm=${K8SVERSION} \
+          kubelet=${K8SVERSION} \
+          kubectl=${K8SVERSION} 
+          
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
 br_netfilter
