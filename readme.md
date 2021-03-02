@@ -1,6 +1,6 @@
 ```
 #!/usr/bin/env bash
-K8SVERSION=1.20.5-00
+K8SVERSION=1.20.4-00
 
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
 sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
