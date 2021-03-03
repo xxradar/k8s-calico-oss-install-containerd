@@ -1,4 +1,3 @@
-```
 #!/usr/bin/env bash
 K8SVERSION=1.20.4-00
 
@@ -54,5 +53,3 @@ mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl taint nodes --all node-role.kubernetes.io/master-
-```
-
