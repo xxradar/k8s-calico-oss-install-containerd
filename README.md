@@ -17,3 +17,8 @@ Join the nodes ...
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_node.sh | bash
 ```
 
+## Install a demo application 
+```
+git clone https://github.com/xxradar/app_routable_demo
+./setup.sh
+```
