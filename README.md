@@ -20,5 +20,6 @@ curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/calico_in
 ## Install a demo application 
 ```
 git clone https://github.com/xxradar/app_routable_demo
+cd ./app_routable_demo
 ./setup.sh
 ```
