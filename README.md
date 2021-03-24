@@ -14,7 +14,7 @@ Join the nodes ...
 
 ## Install calico (on master node only)
 ```
-curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_node.sh | bash
+curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/calico_install.sh | bash
 ```
 
 ## Install a demo application 
