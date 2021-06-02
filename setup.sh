@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 K8SVERSION=1.20.4-00
 
 sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add
