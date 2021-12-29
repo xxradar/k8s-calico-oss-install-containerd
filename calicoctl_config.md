@@ -9,5 +9,7 @@ sudo mv ./calicoctl /usr/local/bin/calicoctl
 
 ## nat disable 
 
+## BGP route config
+
 
 
