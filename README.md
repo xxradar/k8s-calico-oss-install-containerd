@@ -1,4 +1,4 @@
-# Building a K8S install with kubeadm / containerd / calico
+# Building a K8S install with kubeadm / containerd / calico or cilium
 
 ## Create a few nodes
 Use at least 4G of RAM / 2 cores and current version of Ubuntu.
