@@ -13,7 +13,10 @@ Note the kubeadm join command, it looks like ...
 kubeadm join 10.11.2.231:6443 --token eow8gw.8863eelhollpn37p \
     --discovery-token-ca-cert-hash sha256:1e0ec482fcee39edbf6225e6a7e57217bd1e57c23e2d318ef772fae16759947e
 ```
-
+## untaint if necessary
+```
+kubectl taint nodes --all node-role.kubernetes.io/control-plane:NoSchedule-
+```
 ## Initialise the kubernetes worker nodes
 ```
 curl https://raw.githubusercontent.com/xxradar/k8s-calico-oss-install-containerd/ubuntu-22.04-fix/setup_node_latest.sh | bash
