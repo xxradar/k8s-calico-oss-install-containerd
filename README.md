@@ -2,7 +2,7 @@
 
 ## Create a few nodes
 Use at least 4G of RAM / 2 cores and current version of Ubuntu (20.04)
-(see branch 
+(see branch ubuntu-22.04-fix)
 
 ## Initialise kubernetes master mode 
 ```
