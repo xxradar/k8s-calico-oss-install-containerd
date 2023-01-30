@@ -5,7 +5,7 @@ Use at least 4G of RAM / 2 cores and current version of Ubuntu (20.04)
 
 ## Initialise kubernetes master mode 
 ```
-curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup.sh | bash          #K8SVERSION=1.24.7-00
+curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup.sh | bash          #K8SVERSION=1.25.5-00
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_latest.sh | bash
 
 ```
@@ -17,7 +17,7 @@ kubeadm join 10.11.2.231:6443 --token eow8gw.8863eelhollpn37p \
 
 ## Initialise the kubernetes worker nodes
 ```
-curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_node.sh | bash         #K8SVERSION=1.24.7-00
+curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_node.sh | bash         #K8SVERSION=1.25.5-00
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_node_latest.sh | bash
 
 ```
