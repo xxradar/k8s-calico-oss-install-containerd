@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-curl -L https://docs.projectcalico.org/manifests/calico.yaml -O
 
-sed -i 's/# - name: CALICO_IPV4POOL_CIDR/- name: CALICO_IPV4POOL_CIDR/g' calico.yaml
-sed -i 's/#   value: "192.168.0.0\/16"/  value: "192.168.0.0\/20"/g' calico.yaml
-
-cat calico.yaml | grep CALICO_IPV4POOL_CIDR -A1
-
-kubectl apply -f ./calico.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/tigera-operator.yaml
+curl https://raw.githubusercontent.com/projectcalico/calico/v3.24.5/manifests/custom-resources.yaml -O
+sed -i 's/#   value: "192.168.0.0\/16"/  value: "192.168.0.0\/20"/g' custom-resources.yaml
+kubectl apply -f ./custom-resources.yaml
 
