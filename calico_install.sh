@@ -7,3 +7,4 @@ sed -i 's/#   value: "192.168.0.0\/16"/  value: "192.168.0.0\/20"/g' calico.yaml
 cat calico.yaml | grep CALICO_IPV4POOL_CIDR -A1
 
 kubectl apply -f ./calico.yaml
+
