@@ -73,6 +73,12 @@ scheduler:
 controllerManager:
   extraArgs:
     "feature-gates": "SidecarContainers=true"
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+cgroupDriver: systemd
+featureGates:
+  SidecarContainers: true
+kind: KubeletConfiguration
 EOF
 
 
