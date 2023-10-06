@@ -64,9 +64,6 @@ kind: InitConfiguration
 localAPIEndpoint:
   advertiseAddress: "10.1.2.134"
   bindPort: 6443
-nodeRegistration:
-  kubeletExtraArgs:
-    node-ip: 10.1.2.134,fd00:1:2:3::2
 EOF
 
 
