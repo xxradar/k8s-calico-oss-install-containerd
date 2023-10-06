@@ -58,12 +58,6 @@ kind: ClusterConfiguration
 networking:
   podSubnet: 10.244.0.0/16,2001:db8:42:0::/56
   serviceSubnet: 10.96.0.0/16,2001:db8:42:1::/112
----
-apiVersion: kubeadm.k8s.io/v1beta3
-kind: InitConfiguration
-localAPIEndpoint:
-  advertiseAddress: "10.1.2.134"
-  bindPort: 6443
 EOF
 
 
