@@ -7,7 +7,7 @@ Use at least 4G of RAM / 2 cores and current version of Ubuntu (20.04)
 ```
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup.sh | bash          #K8SVERSION=1.24.10-00
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/setup_latest.sh | bash
-
+curl https://raw.githubusercontent.com/xxradar/k8s-calico-oss-install-containerd/main/setup-cluster-config-v6.sh | bash
 ```
 Note the kubeadm join command, it looks like ...
 ```
