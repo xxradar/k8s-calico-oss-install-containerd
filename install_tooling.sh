@@ -11,5 +11,5 @@ wget -q "https://github.com/containerd/nerdctl/releases/download/v${NERDCTL_VERS
 tar -xzf /tmp/nerdctl.tar.gz -C /tmp --strip-components 1 bin/nerdctl
 chmod +x /tmp/nerdctl
 sudo mv /tmp/nerdctl /usr/local/bin/
-nerdctl version
+sudo nerdctl version
 
