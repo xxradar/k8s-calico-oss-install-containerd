@@ -34,7 +34,10 @@ curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/calico_in
 curl https://raw.githubusercontent.com/xxradar/install_k8s_ubuntu/main/cilium_install.sh | bash
 
 ```
-
+## Install tooling
+```
+curl https://raw.githubusercontent.com/xxradar/k8s-calico-oss-install-containerd/main/install_tooling.sh | bash
+```
 ## Install a demo application 
 ```
 git clone https://github.com/xxradar/app_routable_demo
