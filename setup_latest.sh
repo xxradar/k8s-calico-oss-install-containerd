@@ -8,7 +8,8 @@ sudo apt update -y
 sudo apt install -y \
     watch \
     ipset \
-    tcpdump
+    tcpdump \
+    jq
 
 sudo apt install -y \
           kubeadm \
