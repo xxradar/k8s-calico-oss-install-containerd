@@ -1,4 +1,4 @@
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/xxradar/{repo}/badge)](https://securityscorecards.dev/viewer/?uri=github.com/{owner}/{repo})
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/xxradar/k8s-calico-oss-install-containerd/badge)](https://securityscorecards.dev/viewer/?uri=github.com/xxradar/k8s-calico-oss-install-containerd)
 
 # Building a K8S install with kubeadm / containerd / calico or cilium
 
