@@ -1,0 +1,21 @@
+# .github/workflows/trigger_workflow.yml
+
+name: Trigger Callable Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL to curl'
+        required: true
+        default: 'https://www.radarhack.com'
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Invoke Callable Workflow
+        uses: xxradar/demo_repo/github/workflows/callable_workflow.yml
+        with:
+          url: ${{ github.event.inputs.url }}
