@@ -11,11 +11,5 @@ on:
         default: 'https://www.radarhack.com'
 
 jobs:
-  trigger:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Invoke Callable Workflow
-        uses: xxradar/demo_repo/github/workflows/callable_workflow.yml
-        with:
-          url: ${{ github.event.inputs.url }}
+  info:
+    uses: xxradar/demo_repo/github/workflows/callable_workflow.yml
