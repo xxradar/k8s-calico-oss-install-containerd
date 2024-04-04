@@ -16,7 +16,9 @@ sudo apt install -y \
           kubeadm \
           kubelet \
           kubectl
-          
+
+sudo apt update -y
+
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
 br_netfilter
