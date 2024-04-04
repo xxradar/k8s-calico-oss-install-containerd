@@ -6,6 +6,9 @@ curl -fsSL https://pkgs.k8s.io/core:/stable:/v1.29/deb/Release.key | sudo gpg --
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.29/deb/ /' | sudo tee /etc/apt/sources.list.d/kubernetes.list
 #sudo apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"
 
+
+sudo apt update -y
+
 sudo apt install -y \
     watch \
     ipset \
@@ -16,8 +19,6 @@ sudo apt install -y \
           kubeadm \
           kubelet \
           kubectl
-
-sudo apt update -y
 
 cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
 overlay
